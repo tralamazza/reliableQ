@@ -5,7 +5,7 @@ reliableQ
 
 ### Install
 
-```npm install reliableQ```
+```npm install reliable-q```
 
 ### Test
 
@@ -16,7 +16,7 @@ reliableQ
 ### Usage
 
 ```js
-var reliableQ = require('reliableQ');
+var reliableQ = require('reliable-q');
 var queue = reliableQ('my_little_queue');
 queue.pop().then(function (item) {
   console.log('popped', item.value);

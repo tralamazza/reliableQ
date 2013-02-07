@@ -1,5 +1,5 @@
 {
-  "name": "reliableQ",
+  "name": "reliable-q",
   "version": "0.0.1",
   "description": "Reliable Queue in Redis",
   "main": "index.js",
