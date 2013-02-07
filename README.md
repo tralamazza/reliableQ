@@ -23,7 +23,7 @@ queue.pop().then(function (item) {
   // OK, notify the queue that we got this!
   // .commit() returns a promise as well, you can return its value and continue the chain
   /*return */ item.commit(); 
-});
+}).done(queue.close);
 ```
 
 
