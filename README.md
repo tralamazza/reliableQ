@@ -1,9 +1,35 @@
 reliableQ
 =========
 
-Reliable queue in REDIS with promisified interface.
+[Redis](http://redis.io/) backed reliable queue with [promisified](https://npmjs.org/package/q) interface.
+
+### Install
+
+```npm install reliableQ```
+
+### Test
+
+1. Clone the repo
+2. Install local redis
+3. ```npm test```
+
+### Usage
+
+```js
+var reliableQ = require('reliableQ');
+var queue = reliableQ('my_little_queue');
+queue.pop().then(function (item) {
+  console.log('popped', item.value);
+  // OK, notify the queue that we got this!
+  // .commit() returns a promise as well, you can return its value and continue the chain
+  /*return */ item.commit(); 
+});
+```
 
 
+### Future plans
+* EE (auto abort, errors)
+* Examples & more tests
 
 
 ### License (MIT)
