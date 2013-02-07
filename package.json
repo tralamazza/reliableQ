@@ -1,0 +1,21 @@
+{
+  "name": "reliableQ",
+  "version": "0.0.1",
+  "description": "Reliable Queue in Redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -t 5000 -R spec test/*.js"
+  },
+  "repository": "https://github.com/tralamazza/reliableQ.git",
+  "author": "Daniel Tralamazza <tralamazza@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "~0.8.2",
+    "q": "~0.8.12",
+    "when": "~1.7.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "should": "~1.2.1"
+  }
+}
